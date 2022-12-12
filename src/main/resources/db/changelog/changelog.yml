@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: build-containers
+      author: BennerG
+      changes:
+        - cosmosdb:
+            id: create-database
+            databaseName: connector
+        - cosmosdb:
+            id: create-organizations-collection
+            collectionName: organizations
+            databaseName: connector
+        - cosmosdb:
+            id: create-users-collection
+            collectionName: users
+            databaseName: connector
+        - cosmosdb:
+            id: create-products-collection
+            collectionName: products
+            databaseName: connector
